@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: goat-tunnel-builder
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
