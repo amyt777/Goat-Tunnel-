@@ -8,4 +8,8 @@ RUN apt-get update -y && \
 ENV PATH="/usr/local/flutter/bin:${PATH}"
 WORKDIR /app
 COPY . .
+
+# ✅ Fix build.sh permission issue
+RUN chmod +x build.sh
+
 RUN bash build.sh
